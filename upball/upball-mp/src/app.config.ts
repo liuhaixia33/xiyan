@@ -1,0 +1,56 @@
+export default defineAppConfig({
+  pages: [
+    'pages/index/index',
+    'pages/team/detail',
+    'pages/team/members',
+    'pages/team/create',
+    'pages/team/join',
+    'pages/match/list',
+    'pages/match/detail',
+    'pages/match/create',
+    'pages/membership/plans',
+    'pages/membership/orders',
+    'pages/user/index',
+    'pages/user/profile',
+    'pages/announcement/list',
+    'pages/announcement/create',
+  ],
+  window: {
+    backgroundTextStyle: 'light',
+    navigationBarBackgroundColor: '#07c160',
+    navigationBarTitleText: '涨球',
+    navigationBarTextStyle: 'white',
+  },
+  tabBar: {
+    color: '#999',
+    selectedColor: '#07c160',
+    backgroundColor: '#fff',
+    borderStyle: 'black',
+    list: [
+      {
+        pagePath: 'pages/index/index',
+        text: '首页',
+        iconPath: 'assets/icons/home.png',
+        selectedIconPath: 'assets/icons/home-active.png',
+      },
+      {
+        pagePath: 'pages/match/list',
+        text: '赛事',
+        iconPath: 'assets/icons/match.png',
+        selectedIconPath: 'assets/icons/match-active.png',
+      },
+      {
+        pagePath: 'pages/membership/plans',
+        text: '会员',
+        iconPath: 'assets/icons/vip.png',
+        selectedIconPath: 'assets/icons/vip-active.png',
+      },
+      {
+        pagePath: 'pages/user/index',
+        text: '我的',
+        iconPath: 'assets/icons/user.png',
+        selectedIconPath: 'assets/icons/user-active.png',
+      },
+    ],
+  },
+});
